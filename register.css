@@ -1,0 +1,118 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body{
+    margin:0;
+    padding:0;
+    background-image: url("log.jpg");
+    background-position:center;
+    background-size:cover; 
+    font-family:sans-sarif;
+    
+}
+.registerbox{
+    width:456px;
+    height:575px;
+    background:rgba(0,0,0,0.8);
+    color:white;
+    top:80px;
+    left:440px;
+    position:absolute;
+    transform:translate(-50,-50%);
+    box-sizing: border-box;
+    padding:70px 30px;
+    box-shadow: :0 0 20px 3px rgba(0,0,0,1.0);
+    
+    
+}
+h1{
+    margin:0;
+    padding:0 0 20px;
+    text-align:center;
+    font-size:30px;
+    
+}
+.registerbox p{
+    margin:0;
+    padding:0;
+    font-size:25px;
+    font-weight: bold;
+    
+    
+}
+.registerbox input{
+    width:100%;
+    margin-bottom: 20px;
+}
+.registerbox input[type="text"],input[type="password"]{
+    border:none;
+    border-bottom: 1.0px solid white;
+    background: transparent;
+    outline: :none;
+    height: 37px;
+    color:white;
+    font-size: 20px;
+}
+::placeholder{
+    color:gray;
+}
+.registerbox input[value="Login"]{
+    border:none;
+    outline:none;
+    height:40px;
+    background:red;
+    color:white;
+    font-size:20px;
+    border-radius:24px;
+    font-weight:bold;
+    
+    
+}
+.registerbox input[value="Register"]{
+    border:none;
+    outline:none;
+    height:40px;
+    background:green;
+    color:white;
+    font-size:20px;
+    border-radius:24px;
+    font-weight:bold;
+    
+    
+}
+.registerbox a{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    font-size:15px;
+    line-height: 25px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.registerbox a:hover{
+    color:gray;
+}
+.registerbox input[type="button"]:hover{
+    cursor:pointer;
+    background:white;
+    color:black;
+    
+}
+.registerbox input[type="submit"]:hover{
+    cursor:pointer;
+    background:white;
+    color:black;
+}
+.registerbox i{
+    width:25px;
+}
+.eye{
+    position: absolute;
+}
+.eye1{
+    position: absolute;
+}
+#enable{
+    display: none;
+}
+#enable1{
+    display: none;
+}

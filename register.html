@@ -1,0 +1,105 @@
+ <html>
+<head>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <meta charset="utf-8">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="register.css"  >
+     </head>
+<body>
+     <div class="registerbox">
+         <h1>Registration</h1>
+         <form>
+         <p><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Enter Email Address</p>
+             <input type="text"name="username"placeholder="Enter Email Address"id="username">
+             <p><i class="fa fa-key" aria-hidden="true"></i> Enter Paswword</p>
+             <input type="password"name=" password"placeholder="Enter Password"id="password">
+             <span class="eye" onclick="iconShowHide();">
+             <i id="enable"class="fa fa-eye" aria-hidden="true"></i>
+             <i id="disable" class="fa fa-eye-slash"aria-hidden="true"></i> 
+             </span>
+             <p><i class="fa fa-key" aria-hidden="true"></i> Confirm Paswword</p>
+             <input type="password"name="confirmpassword"placeholder="Confirm Password"id="confirmpassword">
+             <span class="eye1" onclick="iconConfirm();">
+             <i id="enable1"class="fa fa-eye" aria-hidden="true"></i>
+             <i id="disable1" class="fa fa-eye-slash"aria-hidden="true"></i> 
+             </span>
+             <p><i class="fa fa-mobile" aria-hidden="true"></i> Enter Mobile Number</p>
+             <input type="text"name="mobilenumber"placeholder="Enter Mobile Number"id="mobilenumber">
+             
+             <input type="button"name="loginbtn"value="Register"onclick="validation();">
+         </form>
+         <form action="login.html">
+             
+                <input type="submit"=name="registersbt"value="Login">    
+         </form>
+             </div>
+    <script>
+        function iconShowHide(){
+            var x=document.getElementById("password");
+            var y=document.getElementById("enable");
+            var z=document.getElementById("disable");
+            if(x.type==='password'){
+                x.type="text";
+                y.style.display="block";
+                z.style.display="none";
+            }
+            else{
+                xtype="password";
+                y.style.display="none";
+                z.style.display="black";
+            }
+        }
+        function iconConfirm(){
+            var x=document.getElementById("confirmpassword");
+            var y=document.getElementById("enable1");
+            var z=document.getElementById("disable1");
+            if(x.type==='password'){
+                x.type="text";
+                y.style.display="block";
+                z.style.display="none";
+            }
+            else{
+                xtype="password";
+                y.style.display="none";
+                z.style.display="black";
+            }
+        }
+        function validation(){
+            
+            var mobileNumber=document.getElementById("mobilenumber").value;
+            var confirmPassword=document.getElementById("confirmpassword").value;
+            var userEmail=document.getElementById("username").value;
+            var passWord=document.getElementById("password").value;
+           
+            if((userEmail.length !=0)&&(passWord.length !=0)&&(confirmPassword.length !=0)&&(mobileNumber.length !=0))}
+                if(confirmPassword==password){
+                swal({
+                    title:"Registration Sucessful..",
+                    text:"Thank You!",
+                    icon:"Success",
+                 });
+                }
+            else{
+                swal({
+                    title:"Registration Failed..Something went wrong",
+                    text:"Password mismatch",
+                    icon:"info",
+                });
+                }
+            }
+             else{
+                swal({
+                    title:"Registration Failed..",
+                    text:"Please Fullfill all Fields",
+                    icon:"error",
+                });
+            }
+        }
+    </script>
+     <div id="particles-js"></div>
+    <script src="particles.min.js"></script>
+    <script src="app.js"></script>
+     </body>
+
+
+</html>
